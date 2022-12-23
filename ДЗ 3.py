@@ -54,7 +54,7 @@ n_ten = int(input("Введите число:  "))
 
 def ten_two(num,result = ""):
     if num == 0:
-        return result[::-1]
+        return result[::-1] # разворот строки наоборот
     result += str(num%2)
     return ten_two(num//2, result)   
 
