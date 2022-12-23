@@ -37,6 +37,17 @@ def fract(num):
 list2 = list(map(fract,list1))
 print(list2)
 
+max_fract = list2[0]
+min_fract = list2[0]
+for i in list2:
+    if i > max_fract:
+        max_fract = i
+    elif i < min_fract:
+        min_fract = i
+result = max_fract - min_fract
+print(result)
+
+
 # Напишите программу, которая будет преобразовывать десятичное число в двоичное
 
 
