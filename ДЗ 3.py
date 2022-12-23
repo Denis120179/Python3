@@ -26,7 +26,7 @@ print(list2)
 
 # Задайте список из вещественных чисел. Напишите программу, которая найдет разницу между максимальным и
 # минимальным значением дробной части элементов
-
+'''
 import random
 list1 = [round(random.uniform(0,10),2) for i in range(random.randint(5,10))]
 print(list1)
@@ -46,7 +46,7 @@ for i in list2:
         min_fract = i
 result = max_fract - min_fract
 print(result)
-
+'''
 
 # Напишите программу, которая будет преобразовывать десятичное число в двоичное
 
