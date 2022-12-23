@@ -49,7 +49,18 @@ print(result)
 '''
 
 # Напишите программу, которая будет преобразовывать десятичное число в двоичное
+'''
+n_ten = int(input("Введите число:  "))
 
+def ten_two(num,result = ""):
+    if num == 0:
+        return result[::-1]
+    result += str(num%2)
+    return ten_two(num//2, result)   
+
+n_two = ten_two(n_ten)
+print(n_two)
+'''
 
 # Задайте число, составьте список чисел Фибоначчи, в том числе для отрицательных индексов
 
