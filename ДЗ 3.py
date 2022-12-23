@@ -63,4 +63,14 @@ print(n_two)
 '''
 
 # Задайте число, составьте список чисел Фибоначчи, в том числе для отрицательных индексов
-
+'''
+n = int(input("Введите число:  "))
+list1 = [0,1]
+list2 = [0,1]
+for i in range(n-1):
+    list1.append(list1[-2] + list1[-1])
+    list2.append(list2[-2] - list2[-1])
+print(list1)
+print(list2)
+print(list2[::-1] + list1[1:])
+'''
